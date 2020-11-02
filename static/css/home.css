@@ -1,0 +1,61 @@
+body {
+    margin: 0.1px;
+    font-size: 0;
+}
+
+.sec1 {
+    height: 665px;
+    z-index: -1;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#sec1_left {
+    width: 348px;
+    background-image: url("/static/img/home_bacimg.jpg");
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#sec1_right {
+    width: calc(100% - 348px);
+    overflow: hidden;
+    background-color: #232637;
+    font-size: 16px;
+}
+
+.sec1_header {
+    width: 120px;
+    height: 170px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 50px;
+    float: right;
+}
+
+#sec1_logo {
+    width: 148px;
+    height: 128px;
+    margin: 15px 15px 0;
+    float: right;
+}
+
+.page_link {
+    width: 100px;
+    height: 30px;
+    color: rgb(226,227,229);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 16pt;
+    text-decoration: none;
+    
+}
+
+svg#sec1_graphic {
+    position: absolute;
+    width: 883px;
+    height: 302.95px;
+    left: 53px;
+    top: 199px;
+}

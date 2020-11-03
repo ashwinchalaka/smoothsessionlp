@@ -1,0 +1,11 @@
+header {
+    margin: 15px;
+}
+
+h1 span {
+    font-size: 16px;
+}
+
+header a {
+    display: block;
+}

@@ -12,15 +12,46 @@
 
     <!-- STATIC FILES (SERVER LINKS) -->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/aboutus.css') }}">
-    <!-- <script type="text/javascript" src="{{ url_for('static', filename='js/aboutus.js') }}"></script> -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/aboutus.js') }}"></script>
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <header>
-    <h1>About Us <span>(dev tools)</span></h1>
-    <a href="/">go home</a>
-    <a href="/updates">go updates</a>
-    <hr>
+    <img id="sec1_logo" onclick="nav_home()"
+        src="{{ url_for('static', filename='img/smooth_logo2.png') }}" alt="">
+    <div id="sec1_header">
+        <a class="page_link" href="/aboutus">About Us</a>
+        <a class="page_link" id="header_otherpage" href="/updates">Updates</a>
+    </div>
 </header>
 <body>
-    
+    <div id="sec2_mission">
+        <p id="sec2_banner">Our Mission</p>
+        <p id="sec2_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div id="sec3_meettheteam">
+        <p id="sec3_banner">Meet the Team</p>
+        <div class="sec3_members" id="sec3_member1">
+            <img src="{{ url_for('static', filename='img/profile-mattwallace.jpg') }}" alt="">
+            <p class="sec3_member_name">Matt Wallace</p>
+            <p class="sec3_member_title">Founder, CEO</p>
+            <p class="sec3_member_bio">Matt Wallace is a musician, producer, DJ and aspiring entrepreneur from Northern California. Matt started learning how to read music and play the piano at a very young age, eventually switching to the drums by the age of 10. Growing up in Palo Alto, he was fully immersed in the way of entrepreneurial thinking while continuing to pursue his love for music. By the time he was 16, Matt was already taking AP music theory at his high school and knew that he would go on to college to pursue a degree in music as well as a music career thereafter. It was around that time that Matt fell in love with electronic dance music, DJing and the subculture surrounding it. Shortly after arriving at SDSU he began to hone his skills in electronic music production and within two years switched his focus from playing drums and percussion to producing music entirely. Through years of improving his craft as a producer Matt came up with the idea for Smooth Session after being increasingly frustrated with the limitations that other conferencing platforms had on collaborative song-making. He will stop at nothing to come up with a functional and practical tool to help not only himself, but all other music producers in quickening their creative workflow for the collaborative process.</p>
+        </div>
+        <div class="sec3_members" id="sec3_member1">
+            <img src="{{ url_for('static', filename='img/profile-liamnoroian.jpg') }}" alt="">
+            <p class="sec3_member_name">Liam Noroian</p>
+            <p class="sec3_member_title">Co-founder, CTO</p>
+            <p class="sec3_member_bio">Liam is a computer scientist and college student with a background in computer networking and sound engineering. Currently attending Foothill College in California, he will soon transfer to a 4-year to complete his education in computer science. While much of his experience is focused around distributed computing and blockchains, his audio background led him to the world of high-throughput audio and video streaming.</p>
+        </div>
+    </div>
 </body>
+<footer>
+    <hr>
+    <p id="footer_compname">© Smooth Session Inc.</p>
+    <p id="footer_comploc">San Diego, CA</p>
+    <p id="footer_devsig">DESIGNED BY ASHWIN</p>
+</footer>
 </html>

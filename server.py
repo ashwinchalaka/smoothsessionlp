@@ -1,5 +1,5 @@
 # Server setup
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect
 app = Flask(__name__)
 
 # Routes
@@ -8,6 +8,15 @@ app = Flask(__name__)
 @app.route('/')
 def go_home():
     return render_template('home.html')
+
+@app.route('/newSubscriber', methods=['POST'])
+def new_subscriber():
+    print("Got Post Info")
+    print(request.form)
+    name = request.form['name']
+    email = request.form['email']
+    radio = request.form['radio']
+    return redirect('/')
 
 # R002
 @app.route('/aboutus')
@@ -21,4 +30,4 @@ def go_updates():
 
 #  Server setup 
 if __name__=="__main__":    
-    app.run(debug=True)
+    app.run(host="localhost", port=5000, debug=True)

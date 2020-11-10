@@ -242,7 +242,7 @@ input#onlylaunch {
 }
 
 #sec3_bothalf_banner {
-    margin-top: 40px;
+    margin-top: 30px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -250,7 +250,7 @@ input#onlylaunch {
     color: #DCDDDF;
 }
 
-#sec4 {
+footer {
     width: 100%;
     height: 150px;
     display: block;
@@ -258,14 +258,14 @@ input#onlylaunch {
     padding-top: 10px;
 }
 
-#sec4 hr {
+footer hr {
     width: 85%;
     border-top: 3px solid black; 
     margin: 30px 7.5% 0;
         
 }
 
-#sec4_compname, #sec4_comploc {
+#footer_compname, #footer_comploc {
     margin-left: 8%;
     margin-right: 8%;
     font-family: 'Raleway', sans-serif;
@@ -274,15 +274,15 @@ input#onlylaunch {
     color: black;
 }
 
-#sec4_compname {
+#footer_compname {
     margin-top: 15px;
 }
 
-#sec4_comploc {
+#footer_comploc {
     margin-top: 5px;
 }
 
-#sec4_devsig {
+#footer_devsig {
     margin-right: 6%;
     font-family: 'Bebas Neue', cursive;
     font-weight: 400;

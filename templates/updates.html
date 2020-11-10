@@ -12,15 +12,34 @@
 
     <!-- STATIC FILES (SERVER LINKS) -->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/updates.css') }}">
-    <!-- <script type="text/javascript" src="{{ url_for('static', filename='js/updates.js') }}"></script> -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/updates.js') }}"></script>
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
-<header>
+<!-- <header>
     <h1>Updates <span>(dev tools)</span></h1>
     <a href="/">go home</a>
     <a href="/aboutus">go aboutus</a>
     <hr>
+</header> -->
+<header>
+    <img id="sec1_logo" onclick="nav_home()"
+        src="{{ url_for('static', filename='img/smooth_logo2.png') }}" alt="">
+    <div id="sec1_header">
+        <a class="page_link" id="header_otherpage" href="/aboutus">About Us</a>
+        <a class="page_link" href="/updates">Updates</a>
+    </div>
 </header>
 <body>
-    
+    <h1>This page is new and has not yet been updated.</h1>
 </body>
+<footer>
+    <hr>
+    <p id="footer_compname">© Smooth Session Inc.</p>
+    <p id="footer_comploc">San Diego, CA</p>
+    <p id="footer_devsig">DESIGNED BY ASHWIN</p>
+</footer>
 </html>
